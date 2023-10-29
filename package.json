@@ -1,0 +1,14 @@
+{
+  "name": "vue-study",
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "study-basic": "pnpm --filter vue-study-basic dev"
+  },
+  "devDependencies": {
+    "@dave/eslint-config-myconfig": "workspace:*"
+  }
+}
