@@ -4,28 +4,22 @@
 <!-- https://ko.vuejs.org/api/reactivity-core.html#watcheffect -->
 
 <template>
- 
-<button @click="onIncreaseX">example1</button>
-
+  <button @click="onIncreaseX">example1</button>
 </template>
-    
-<style scoped>
-    
-</style>
-    
-<script setup>
-import { watchEffect, ref, reactive } from 'vue'
+
+<script setup lang="ts">
+import { watchEffect, ref } from 'vue'
 
 const xCount = ref(0)
 
 const onIncreaseX = () => {
-    xCount.value++
+  xCount.value++
 }
 
 const stop = watchEffect(() => {
-    console.log(`xCount is ${xCount.value}`)
+  console.log(`xCount is ${xCount.value}`)
 })
-p
-// stop()
-
+stop()
 </script>
+
+<style scoped></style>
