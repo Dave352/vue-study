@@ -12,10 +12,17 @@ module.exports = {
     'plugin:vue/vue3-strongly-recommended',
     'plugin:vue/vue3-recommended',
     'plugin:prettier/recommended',
+    'plugin:tailwindcss/recommended',
   ],
+  plugins: ['unused-imports'],
   rules: {
+    'no-unused-vars': 'off',
+    'unused-imports/no-unused-imports': 'error',
+    'unused-imports/no-unused-vars': [
+      'warn',
+      { vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_' },
+    ],
     'prettier/prettier': [
-      // eslint-config-prettier와 eslint-plugin-prettier를 통해 Prettier와 통합하는 규칙
       'error',
       {
         printWidth: 100,
