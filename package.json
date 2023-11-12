@@ -6,9 +6,7 @@
   ],
   "scripts": {
     "build": "pnpm -r build",
-    "study-basic": "pnpm --filter vue-study-basic dev"
-  },
-  "devDependencies": {
-    "@dave/eslint-config-myconfig": "workspace:*"
+    "study-basic": "pnpm --filter vue-study-basic dev",
+    "todo-list": "pnpm --filter todo-list dev"
   }
 }
