@@ -3,7 +3,7 @@
     <HeaderBar></HeaderBar>
     <NavigationBar></NavigationBar>
 
-    <main class="pt-header-bar pl-navigation-bar min-w-0 grow-[1] bg-slate-200">
+    <main class="pt-header-bar pl-navigation-bar min-w-0 grow-[1] bg-red-100">
       <WrapperBox class="pl-4 pt-4">
         <router-view></router-view>
       </WrapperBox>

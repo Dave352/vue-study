@@ -9,22 +9,22 @@
       :to="item.to"
       class="my-2 block min-w-[174px] select-none"
     >
-      <wrapperBox
+      <WrapperBox
         :class="
           twJoin(
-            'flex h-10 items-center rounded-md bg-transparent text-black hover:bg-red-100 hover:text-red-400 pl-6 pr-2',
-            isExactActive && 'text-red-400 bg-red-100',
+            'flex h-10 items-center rounded-md transition-all bg-transparent text-black hover:bg-red-100 hover:text-red-300 pl-6 pr-2',
+            isExactActive && 'text-red-300 bg-red-100',
           )
         "
       >
         {{ item.name }}
-      </wrapperBox>
+      </WrapperBox>
     </RouterLink>
   </nav>
 </template>
 
 <script setup lang="ts">
-import wrapperBox from '@/elements/wrapper-box.vue'
+import WrapperBox from '@/elements/wrapper-box.vue'
 import { RoutePath } from '@/routes/app-route-path'
 import { twJoin } from 'tailwind-merge'
 
